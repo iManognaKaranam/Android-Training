@@ -3,9 +3,12 @@ package com.example.storage
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
+import android.widget.TextView
 import androidx.security.crypto.EncryptedSharedPreferences
 import androidx.security.crypto.MasterKeys
 
@@ -13,8 +16,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        var animation = findViewById<TextView>(R.id.textViewAnim)
+        var anim = AnimationUtils.loadAnimation(this, R.anim.blink)
+        animation.startAnimation(anim)
+
         val keyGenParameterSpec = MasterKeys.AES256_GCM_SPEC
         val mainKeyAlias = MasterKeys.getOrCreate(keyGenParameterSpec)
+
         lateinit var sp : SharedPreferences
 
         var usernameEditText = findViewById<EditText>(R.id.editTextName)
@@ -47,5 +55,6 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+
     }
 }

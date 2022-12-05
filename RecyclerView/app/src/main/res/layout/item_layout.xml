@@ -13,6 +13,8 @@
         android:layout_height="100dp"
         android:layout_gravity="center"
         app:cardCornerRadius="4dp"
+
+
         tools:layout_editor_absoluteX="90dp"
         tools:layout_editor_absoluteY="10dp">
 
@@ -39,6 +41,5 @@
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textViewUsername" />
-
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

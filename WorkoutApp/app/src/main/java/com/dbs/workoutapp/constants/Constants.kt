@@ -34,8 +34,7 @@ class Constants {
             exerciseList.add(abdominalCrunch)
 
             val stepUpOnChair =
-                ExerciseModel(
-                    5,
+                ExerciseModel(5,
                     "Step-Up onto Chair",
                     R.drawable.ic_step_up_onto_chair,
                     false,
@@ -72,13 +71,7 @@ class Constants {
             exerciseList.add(lunges)
 
             val pushupAndRotation =
-                ExerciseModel(
-                    11,
-                    "Push up and Rotation",
-                    R.drawable.ic_push_up_and_rotation,
-                    false,
-                    false
-                )
+                ExerciseModel(11, "Push up and Rotation", R.drawable.ic_push_up_and_rotation, false, false)
             exerciseList.add(pushupAndRotation)
 
             val sidePlank = ExerciseModel(12, "Side Plank", R.drawable.ic_side_plank, false, false)

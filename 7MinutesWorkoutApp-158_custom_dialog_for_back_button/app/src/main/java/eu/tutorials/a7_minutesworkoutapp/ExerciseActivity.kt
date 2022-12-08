@@ -42,7 +42,8 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private var binding:ActivityExerciseBinding? = null
     private var tts: TextToSpeech? = null // Variable for Text to Speech
     private var player: MediaPlayer? = null
-  private var exerciseAdapter: ExerciseStatusAdapter? = null
+    private var exerciseAdapter: ExerciseStatusAdapter? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //inflate the layout
@@ -51,9 +52,11 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         setContentView(binding?.root)
 // then set support action bar and get toolBarExercise using the binding
 //variable
+        //bos:This is for the display of the tool bar
         setSupportActionBar(binding?.toolbarExercise)
 
         if (supportActionBar != null){
+            //bos: this is for enabling the back button in toolbar
             supportActionBar?.setDisplayHomeAsUpEnabled(true)
         }
         binding?.toolbarExercise?.setNavigationOnClickListener {
@@ -66,7 +69,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         exerciseList = Constants.defaultExerciseList()
 
         setupRestView()
-setupExerciseStatusRecyclerView()
+        setupExerciseStatusRecyclerView()
 
     }
 
@@ -305,7 +308,9 @@ binding?.flRestView?.visibility = View.INVISIBLE
         dialogBinding.tvYes.setOnClickListener {
             //Todo 6 We need to specify that we are finishing this activity if not the player
             // continues beeping even after the screen is not visibile
-            this@ExerciseActivity.finish()
+            //this@ExerciseActivity.finish()
+            //bos: both refers to same activity , so no need to explictly mention
+            this.finish()
             customDialog.dismiss() // Dialog will be dismissed
         }
         dialogBinding.tvNo.setOnClickListener {

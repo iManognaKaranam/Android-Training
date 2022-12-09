@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Sys001/AndroidStudioProjects/7MinutesWorkoutApp-172_adding_recyclerview_and_finishing_the_app/app/src/main/res/layout/activity_history.xml" value="0.209375" />
+        <entry key="..\:/Users/Sys001/AndroidStudioProjects/7MinutesWorkoutApp-172_adding_recyclerview_and_finishing_the_app/app/src/main/res/layout/item_history_row.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable-anydpi/drawable_radio_group_tab_background.xml" value="0.19895833333333332" />
         <entry key="app/src/main/res/drawable-anydpi/item_circular_color_gray_background.xml" value="0.18229166666666666" />
         <entry key="app/src/main/res/drawable-anydpi/item_circular_thin_color_accent_border.xml" value="0.18229166666666666" />

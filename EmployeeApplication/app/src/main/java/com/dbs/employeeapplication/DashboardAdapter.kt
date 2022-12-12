@@ -25,7 +25,6 @@ class DashboardAdapter(private val items: ArrayList<String>) :
         holder.tvPosition1.text = (position + 1).toString()
         holder.tvItem1.text = username.toString()
 
-        // Updating the background color according to the odd/even positions in list.
         if (position % 2 == 0) {
             holder.llDashboardItemMain.setBackgroundColor(
                 Color.parseColor("#EBEBEB")

@@ -25,7 +25,6 @@ class HistoryAdapter(private val items: ArrayList<String>) :
         holder.tvPosition.text = (position + 1).toString()
         holder.tvItem.text = date
 
-        // Updating the background color according to the odd/even positions in list.
         if (position % 2 == 0) {
             holder.llHistoryItemMain.setBackgroundColor(
                 Color.parseColor("#EBEBEB")
@@ -37,16 +36,10 @@ class HistoryAdapter(private val items: ArrayList<String>) :
         }
     }
 
-    /**
-     * Gets the number of items in the list
-     */
     override fun getItemCount(): Int {
         return items.size
     }
 
-    /**
-     * A ViewHolder describes an item view and metadata about its place within the RecyclerView.
-     */
     class ViewHolder(binding: ItemHistoryRowBinding) : RecyclerView.ViewHolder(binding.root) {
         // Holds the TextView that will add each item to
         val llHistoryItemMain = binding.llHistoryItemMain

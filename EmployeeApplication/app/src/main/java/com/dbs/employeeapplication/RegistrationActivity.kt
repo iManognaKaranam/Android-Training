@@ -30,6 +30,7 @@ class RegistrationActivity : AppCompatActivity() {
             val lname = binding?.etLastName?.text.toString()
             val email = binding?.etEmail?.text.toString()
             val password = binding?.etPassword?.text.toString()
+
             var flag = true
             if(nameValidator(fname) || nameValidator(lname)){
                 flag=false
@@ -41,7 +42,7 @@ class RegistrationActivity : AppCompatActivity() {
                 flag=false
             }
             if(flag){
-                val intent = Intent(this,SignInActivity::class.java)
+                val intent = Intent(this,MainActivity::class.java)
                 startActivity(intent)
             }
             else{

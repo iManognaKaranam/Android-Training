@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DashboardActivity">
-    <!--  we position the toolbar top to top of parent-->
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_dashboard_activity"
         android:layout_width="match_parent"
@@ -15,16 +15,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <!--TODO(Step 1 : Added a RecyclerView to show the list of completed dates in the History Screen UI.)-->
-    <!--START-->
-
     <TextView
         android:id="@+id/tvHistory1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:gravity="center"
-        android:text="LOGIN HISTORY"
+        android:text="USER HISTORY"
         android:textSize="18sp"
         android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/toolbar_dashboard_activity"

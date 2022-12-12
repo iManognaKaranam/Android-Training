@@ -5,7 +5,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-// create the database
+
 @Database(entities = [HistoryEntity::class, DashboardEntity::class],version = 2)
 abstract class HistoryDatabase:RoomDatabase() {
 

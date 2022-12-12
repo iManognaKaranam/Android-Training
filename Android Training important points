@@ -1,0 +1,68 @@
+Todo Concepts:
+
+Design Patterns ----structural
+		----behavorial
+(singleton,adapter,factory)
+https://refactoring.guru/design-patterns/adapter
+
+------------------------------------------------------------------------------------------------------
+
+Singleton Pattern:
+
+1) declare a method getinstance() -- static method
+
+2) Use a single constructor -- private constructor(default/parameterized)
+
+3) Create a object in same class to access the properties
+
+4) Define a static reference
+
+------------------------------------------------------------------------------------------------------
+questions
+
+builder Design Pattern?
+difference between coroutines and threads?
+diff between coroutines and threadsafe?
+sql vs room db
+
+-----------------------------------------------------------------------------
+
+Project
+
+Employee Application (fields??)
+-- signup/signin
+---create profile
+--login ---admin(history of login activity of employees)
+
+-----------------------------------------------------------------------------
+
+Weather Application replica
+---4 functionalities
+
+---------------------------------------------------------------------------------
+
+Employee Application 
+
+Registration/Signup --fields
+1) first Name ,last name
+2) email , password
+
+Signin -- fields
+1) email , password
+
+create profile 3rd screen -- after login only 
+if alrdy created profile show those details
+else create profile button -- open a form
+
+Form
+1) Drop down --current status Junior dev,senior dev,student/learning/instructor/teacher
+2) Company name 
+3) location 
+4) skills
+5) github username
+
+--------------------------------------------------------------------------------
+
+How to turn off the auto-rotate permission in android?
+
+
